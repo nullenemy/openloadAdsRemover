@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Openload Ads Remover",
+    "description": "A extension to get rid of the annoying popup ads and start to enjoy the video right away.",
+    "version": "1.6",
+    "browser_action": {
+      "default_icon": "logo.png",
+      "default_title": "Openload Ads Remover"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": ["content.js"],
+        "run_at": "document_end",
+        "all_frames": true
+      }
+    ]
+  }
